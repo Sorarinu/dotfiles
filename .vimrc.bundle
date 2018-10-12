@@ -290,7 +290,7 @@ call neobundle#begin(expand('~/.vim/bundle'))
   NeoBundle 'tyru/urilib.vim'
 
   " ステータスラインに顔文字を表示
-  " NeoBundle 'mattn/hahhah-vim'
+  NeoBundle 'mattn/hahhah-vim'
 
   " utillity
   NeoBundle 'L9'
@@ -311,7 +311,8 @@ call neobundle#begin(expand('~/.vim/bundle'))
   NeoBundle 'tpope/vim-fugitive'
 
   " ステータスラインをカッコよくする
-  NeoBundle 'Lokaltog/vim-powerline'
+  " NeoBundle 'Lokaltog/vim-powerline'
+  NeoBundle 'itchyny/lightline.vim'
 
   " Redmine on Vim
   NeoBundle 'mattn/vim-metarw-redmine'

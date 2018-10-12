@@ -1,6 +1,6 @@
 [user]
-  name = Tomohito Ozaki
-  email = ozaki@yuroyoro.com
+	name = 高畑 達也
+	email = takahata.tatsuya@willgate.co.jp
 [color]
   # colorの設定(以下のコマンドは自動で色つける)
   status = auto
@@ -11,7 +11,7 @@
 [push]
 	default = current
 [core]
-  excludesfile = ~/.gitignore  # globalな.gitignoreの指定
+	excludesfile = /Users/takahata308/.gitignore
   autocrlf = input                 # CRLFを自動変換
   editor = nvim
   quotepath = false
@@ -189,3 +189,14 @@
 	keepBackup = false
 [ruby]
 	version = 2.2.4
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[commit]
+	template = /Users/takahata308/.stCommitMsg
+[credential]
+	helper = !aws codecommit credential-helper $@
+	UseHttpPath = true

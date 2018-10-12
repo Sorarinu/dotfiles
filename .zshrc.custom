@@ -25,11 +25,11 @@ autoload colors
 colors
 case ${UID} in
 0)
-    PROMPT="🍣 %B%{${fg[red]}%}%/#%{${reset_color}%}%b "
-    PROMPT2="🍣 %B%{${fg[red]}%}%_#%{${reset_color}%}%b "
+    PROMPT="%B%{${fg[red]}%}%/#%{${reset_color}%}%b "
+    PROMPT2="%B%{${fg[red]}%}%_#%{${reset_color}%}%b "
     SPROMPT="%B%{${fg[red]}%}%r is correct? [n,y,a,e]:%{${reset_color}%}%b "
     [ -n "${REMOTEHOST}${SSH_CONNECTION}" ] &&
-        PROMPT="🍣 %{${fg[cyan]}%}$(echo ${HOST%%.*} | tr '[a-z]' '[A-Z]') ${PROMPT}"
+        PROMPT="%{${fg[cyan]}%}$(echo ${HOST%%.*} | tr '[a-z]' '[A-Z]') ${PROMPT}"
     ;;
 *)
     #
@@ -42,12 +42,12 @@ case ${UID} in
     RED="%{${fg[red]}%}"
     CYAN="%{${fg[cyan]}%}"
     WHITE="%{${fg[white]}%}"
-    POH="( ꒪⌓꒪) $"
+    POH=" $"
 
     #
     # Prompt
     #
-    PROMPT='🍣 %{$fg_bold[blue]%}${USER}@%m ${RESET}${WHITE}${POH} ${RESET}'
+    PROMPT='%{$fg_bold[blue]%}${USER}@%m ${RESET}${WHITE}${POH} ${RESET}'
     RPROMPT='${RESET}${WHITE}[${BLUE}%(5~,%-2~/.../%2~,%~)% ${WHITE}]${RESET}'
 
     #
@@ -56,10 +56,10 @@ case ${UID} in
     function zle-line-init zle-keymap-select {
       case $KEYMAP in
         vicmd)
-        PROMPT="🍣 %{$fg_bold[cyan]%}${USER}@%m ${RESET}${WHITE}${POH} ${RESET}"
+        PROMPT=" %{$fg_bold[cyan]%}${USER}@%m ${RESET}${WHITE}${POH} ${RESET}"
         ;;
         main|viins)
-        PROMPT="🍣 %{$fg_bold[blue]%}${USER}@%m ${RESET}${WHITE}${POH} ${RESET}"
+        PROMPT=" %{$fg_bold[blue]%}${USER}@%m ${RESET}${WHITE}${POH} ${RESET}"
         ;;
       esac
       zle reset-prompt
