@@ -9,6 +9,10 @@ call neobundle#begin(expand('~/.vim/bundle'))
 " call vundle#rc()
 
 " Edit {{{
+  NeoBundle 'TwitVim'
+  NeoBundle 'itchyny/calendar.vim'
+  NeoBundle 'easymotion/vim-easymotion'
+
   " NERD_commenter.vim :最強コメント処理 (<Leader>c<space>でコメントをトグル)
   NeoBundle 'scrooloose/nerdcommenter.git'
 

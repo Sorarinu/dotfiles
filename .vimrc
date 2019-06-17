@@ -30,10 +30,6 @@ source ~/dotfiles/.vimrc.misc
 "プラグインに依存するアレ
 source ~/dotfiles/.vimrc.plugins_setting
 
-"Vimでgitのログをきれいに表示する - derisの日記
-"  http://deris.hatenablog.jp/entry/2013/05/10/003430
-" source ~/dotfiles/.vimrc.gitlogviewer
-
 imap OA <Up>
 imap OB <Down>
 imap OD <Left>
@@ -100,3 +96,12 @@ endfunction
 function! LightlineMode()
   return winwidth(0) > 60 ? lightline#mode() : ''
 endfunction
+
+
+" Calendar
+let g:calendar_google_calendar = 1
+
+" TwitVim
+let twitvim_browser_cmd = 'open /Applications/Google\ Chrome.app' " for Mac
+let twitvim_force_ssl = 1
+let twitvim_count = 40
