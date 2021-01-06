@@ -12,6 +12,7 @@ call neobundle#begin(expand('~/.vim/bundle'))
   NeoBundle 'TwitVim'
   NeoBundle 'itchyny/calendar.vim'
   NeoBundle 'easymotion/vim-easymotion'
+  NeoBundle 'skanehira/docker.vim'
 
   " NERD_commenter.vim :最強コメント処理 (<Leader>c<space>でコメントをトグル)
   NeoBundle 'scrooloose/nerdcommenter.git'
