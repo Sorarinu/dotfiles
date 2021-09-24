@@ -89,9 +89,9 @@ export REFE_DATA_DIR=/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/
 # export GOROOT=/usr/local/go
 # export GOOS=darwin
 # export GOARCH=amd64
-export CGO_ENABLED=1
-export GOPATH=$HOME
-export PATH=$PATH:$(go env GOROOT)/bin:$GOPATH/bin
+##export CGO_ENABLED=1
+##export GOPATH=$HOME
+##export PATH=$PATH:$(go env GOROOT)/bin:$GOPATH/bin
 
 # node.js
 # export NODE_PATH=$PATH:/usr/local/lib/node_modules
@@ -110,4 +110,5 @@ alias tml='tmux list-window'
 #export EC2_HOME="/usr/local/Library/LinkedKegs/ec2-api-tools/jars"
 
 # docker and boot2docker
-export DOCKER_HOST=tcp://:2375
+#export DOCKER_HOST=tcp://:2375
+export DOCKER_HOST=unix:///var/run/docker.sock
