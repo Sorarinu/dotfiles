@@ -1,0 +1,1 @@
+/Users/tatsuya.takahata/dotfiles/.zsh

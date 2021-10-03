@@ -1,6 +1,6 @@
 [user]
-	name = 高畑 達也
-	email = takahata.tatsuya@willgate.co.jp
+	name = Tatsuya Takahata
+	email = tatsuya.takahata@visasq.com
 [color]
   # colorの設定(以下のコマンドは自動で色つける)
   status = auto
@@ -11,9 +11,9 @@
 [push]
 	default = current
 [core]
-	excludesfile = /Users/takahata308/.gitignore
+	excludesfile = ~/.gitignore
   autocrlf = false                 # CRLFを自動変換
-  editor = nvim
+  editor = vim
   quotepath = false
 [merge] tool = vimdiff ff = false
 [diff]
@@ -191,12 +191,12 @@
 	version = 2.2.4
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+	path =
 [mergetool "sourcetree"]
 	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
 [commit]
-	template = /Users/takahata308/.stCommitMsg
+	template = ~/.stCommitMsg
 [credential]
 	helper = !aws codecommit credential-helper $@
 	UseHttpPath = true

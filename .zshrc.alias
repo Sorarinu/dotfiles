@@ -1,3 +1,4 @@
+alias history='history 1'
 
 # ls
 alias la="ls -a"
